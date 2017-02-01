@@ -1,0 +1,64 @@
+Question 1: 
+short- short int is always smaller or equal to int in terms of size not value
+int- integers are whole numbers as opposed to a decimal
+float- floating points, can be decimals, are smaller than doubles in terms of number of digits
+double- a floating point number that is about twice the size of floats
+
+#include <stdio.h>
+
+int main() {
+    short a;
+    int  b;
+    float c;
+    double d;
+
+    a = 3.14159265358979;
+    b = 3.14159265358979;
+    c = 3.14159265358979;
+    d = 3.14159265358979;
+    
+    printf("a = %hu \n", a);
+    printf("b = %d \n", b);
+    printf("c = %f \n", c);
+    printf("d = %lf \n", d);
+    return 0;
+}
+
+a = 3                                                                                             
+b = 3                                                                                             
+c = 3.141593                                                                                      
+d = 3.14159265358979  
+
+Quesiton 2: y = (2 + 5)/2
+#include <stdio.h>
+
+int main() {
+  float y = (2 + 5)/2;
+  printf("y = %f\n", y);
+  return 0;
+}
+
+y = 3.000000
+
+Float numbers have up to approximately 7 digits but printf rounds down floats
+
+Question 3: 
+#include <stdio.h>
+
+int main() {
+    int i = 0;
+    int j = 0;
+    int x = i++;
+    int y = ++j;
+    
+    printf("i = %i \n", i);
+    printf("j = %i \n", j);
+    printf("x = %i \n", x);
+    printf("y = %i \n", y);
+    return 0;
+}
+
+i = 1 -- returns one because i has been incremented
+j = 1 == returns one because j has been incremented
+x = 0 -- returns zero because i++ returns the original value before incremented    
+y = 1 -- returns one because ++j returns the incremented value
