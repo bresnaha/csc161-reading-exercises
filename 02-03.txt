@@ -1,0 +1,22 @@
+void foo(void) {
+  int x = 5;
+  /* Point A */
+  foo();
+  printf("%d\n", x);
+}
+
+int main(void) {
+  foo();
+  return 0;
+}
+
+Program Counter: 4
+Stack         Output
+------ foo
+  [x]   5
+------ printf  5.0
+
+
+// This program will infinetly loop
+// because it keeps calling itself
+// and returning to the same point.
