@@ -1,0 +1,9 @@
+Binary Representation of 153 (base 2):
+1*2^7+0*2^6+0*2^5+1*2^4+1*2^3+0*2^2+0*2^1+1*2^0 = 10011001
+
+10011001 to signed char: -103
+
+ASCII of 153: trade mark sign
+
+unsigned char x = 153--
+x = 153
